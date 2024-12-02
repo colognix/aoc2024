@@ -1,4 +1,3 @@
-import re
 from days.base import Basesolver
 import numpy as np
 

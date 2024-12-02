@@ -17,7 +17,7 @@ def prepare_line(line, day):
         line = [c for c in line]
         
     # whitespace seperated values
-    elif day in [1]:
+    elif day in [1,2]:
         line = line.split()
         
     # key-value like line [str,int]
@@ -25,7 +25,7 @@ def prepare_line(line, day):
         line = [line[0],int(line[1])]
 
     # convert chars to numbers
-    if day in [1]:
+    if day in [1,2]:
         line = [int(s) for s in line]
 
     return line
