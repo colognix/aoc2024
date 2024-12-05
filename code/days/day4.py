@@ -16,10 +16,6 @@ class Solver(Basesolver):
         # part 2
         self.sms = ['SM','MS']
 
-    # set part for checks and also load part dependent stuff, override if neccessary
-    def set_part(self,part):
-        self.part = part
-
     # solvers for parts, need to be overwritten
     def solve_1(self):
         scan_lines = []

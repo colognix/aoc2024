@@ -10,10 +10,6 @@ class Solver(Basesolver):
     def set_constants(self):
         self.mul_regex = re.compile('mul\(\d+,\d+\)')
 
-    # set part for checks and also load part dependent stuff, override if neccessary
-    def set_part(self,part):
-        self.part = part
-
     # solvers for parts, need to be overwritten
     def solve_1(self):        
         return self.get_mul(self.input)

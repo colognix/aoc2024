@@ -6,14 +6,6 @@ class Solver(Basesolver):
     # process input, override if neccessary
     def process_input(self,input):
         self.input = np.array(input).T
-    
-    # declare constant stuff for both parts
-    def set_constants(self):
-        return
-
-    # set part for checks and also load part dependent stuff, override if neccessary
-    def set_part(self,part):
-        self.part = part
 
     def solve_1(self):
         return sum(np.abs(np.subtract(np.sort(self.input[0]), np.sort(self.input[1]))))

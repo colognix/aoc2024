@@ -2,18 +2,6 @@ from days.base import Basesolver
 
 class Solver(Basesolver):
 
-    # process input, override if neccessary
-    def process_input(self,input):
-        self.input = input
-    
-    # declare constant stuff for both parts
-    def set_constants(self):
-        return
-
-    # set part for checks and also load part dependent stuff, override if neccessary
-    def set_part(self,part):
-        self.part = part
-
     def solve_1(self):
         safe_count = 0
         for report in self.input:
